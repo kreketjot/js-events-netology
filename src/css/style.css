@@ -1,3 +1,19 @@
-body {
-    color: #999;
+#goblin {
+  width: 100px;
+  height: 100px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  grid-template-rows: repeat(4, 120px);
+  grid-gap: 5px;
+}
+
+.grid-item {
+  border: 1px solid black;
+  border-radius: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
