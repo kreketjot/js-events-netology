@@ -1,5 +1,5 @@
-# DOM
+# EVENTS
 
-[![Node.js CI](https://github.com/kreketjot/js-dom-netology/actions/workflows/ghPages.yml/badge.svg?branch=master)](https://github.com/kreketjot/js-dom-netology/actions/workflows/ghPages.yml)
+[![Build and Deploy to Pages](https://github.com/kreketjot/js-events-netology/actions/workflows/ghPages.yml/badge.svg?branch=master)](https://github.com/kreketjot/js-events-netology/actions/workflows/ghPages.yml)
 
-[Экземпляр](https://kreketjot.github.io/js-dom-netology/)
+[Экземпляр](https://kreketjot.github.io/js-events-netology/)
