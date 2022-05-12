@@ -16,8 +16,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.grid-item {
   cursor: url('../images/cursor.png'), pointer;
 }
