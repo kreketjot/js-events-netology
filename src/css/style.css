@@ -1,9 +1,15 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 #goblin {
   width: 100px;
   height: 100px;
 }
 
 #grid {
+  flex: 45% 0 0;
   display: grid;
   grid-template-columns: repeat(4, 120px);
   grid-template-rows: repeat(4, 120px);
@@ -17,4 +23,18 @@
   justify-content: center;
   align-items: center;
   cursor: url('../images/cursor.png'), pointer;
+}
+
+.info-panel {
+  flex: 45% 0 0;
+  font-size: 20px;
+}
+
+.info-panel span {
+  font-weight: bold;
+}
+
+#game-over p {
+  font-size: 25px;
+  font-weight: bold;
 }

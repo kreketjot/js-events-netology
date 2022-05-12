@@ -9,25 +9,42 @@
 </head>
 
 <body>
-  <div id="grid">
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
+  <div class="container">
+    <div id="grid">
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+    </div>
+    <img src="./images/goblin.png" alt="goblin" id="goblin">
+
+    <div class="info-panel">
+      <p>
+        Пойманных гоблинов:&nbsp;
+        <span id="hits-counter"></span>
+      </p>
+      <p>
+        Сбежавших гоблинов:&nbsp;
+        <span id="fails-counter"></span>
+      </p>
+      <div id="game-over" hidden>
+        <p>Сбежавшие гоблины объединились и освободили остальных! Остаётся только бежать!</p>
+        <button type="button" id="restart">Найти новых гоблинов!</button>
+      </div>
+    </div>
   </div>
-  <img src="./images/goblin.png" alt="goblin" id="goblin">
 </body>
 
 </html>
