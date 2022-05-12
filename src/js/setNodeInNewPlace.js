@@ -1,5 +1,6 @@
-const getRandomPlace = (places = new HTMLCollection()) =>
-  places.item(Math.random() * places.length);
+const getRandomPlace = (places = new HTMLCollection()) => places.item(
+  Math.random() * places.length,
+);
 
 const getNewPlace = (places, curPlace) => {
   let randomPlace;

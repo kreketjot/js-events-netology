@@ -1,7 +1,7 @@
-import setNodeInNewPlace from "./setNodeInNewPlace";
+import setNodeInNewPlace from './setNodeInNewPlace';
 
-const goblin = document.getElementById("goblin");
-const places = document.getElementsByClassName("grid-item");
+const goblin = document.getElementById('goblin');
+const places = document.getElementsByClassName('grid-item');
 let curPlace = null;
 
 const updateGoblin = () => {
