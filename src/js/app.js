@@ -2,6 +2,7 @@ import setNodeInNewPlace from './setNodeInNewPlace';
 import updateInfoPanel, { showGameOver } from './updateInfoPanel';
 
 const goblin = document.getElementById('goblin');
+const grid = document.getElementById('grid');
 const places = document.getElementsByClassName('grid-item');
 const restart = document.getElementById('restart');
 let curPlace = null;
@@ -20,9 +21,13 @@ const dispatchGoblin = (fail = true) => document.dispatchEvent(new CustomEvent('
 // eslint-disable-next-line no-return-assign
 const startTimeout = () => timeout = setTimeout(() => dispatchGoblin(true), 1000);
 
-goblin.addEventListener('click', () => {
-  clearTimeout(timeout);
-  dispatchGoblin(false);
+grid.addEventListener('click', (event) => {
+  if (event.target === goblin) {
+    clearTimeout(timeout);
+    dispatchGoblin(false);
+  } else {
+    dispatchGoblin(true);
+  }
 });
 
 const gameOver = () => {
